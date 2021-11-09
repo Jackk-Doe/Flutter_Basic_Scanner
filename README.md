@@ -2,6 +2,10 @@
 
 Learning resource: https://www.youtube.com/watch?v=KUl2FTTS29I&list=PLltVQYLz1BMBUgyhxZFA31of-EKjazC8G&index=3
 
+Basic QRCode & BarCode Scanner
+
+Accessing device camera
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
