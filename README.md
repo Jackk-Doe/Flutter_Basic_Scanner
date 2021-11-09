@@ -1,6 +1,6 @@
 # flutter_basic_scanner
 
-A new Flutter project.
+Learning resource: https://www.youtube.com/watch?v=KUl2FTTS29I&list=PLltVQYLz1BMBUgyhxZFA31of-EKjazC8G&index=3
 
 ## Getting Started
 
