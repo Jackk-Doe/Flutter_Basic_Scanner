@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:qrscan/qrscan.dart' as scanner;
+import 'package:flutter_basic_scanner/pages/qr_scan_page.dart';
+// import 'package:qrscan/qrscan.dart' as scanner;
 
 void main() {
   runApp(const MyApp());
@@ -14,12 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
-      home: const MyHomePage(title: 'Scan BarCode & QRCode'),
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.purple,
+        ),
+        // home: const MyHomePage(title: 'Scan BarCode & QRCode'),
+
+        home: QRScanPage());
   }
 }
 
@@ -74,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          startScan;
+          // startScan;
         },
         tooltip: 'Scan',
         child: const Icon(Icons.qr_code_scanner),
@@ -82,13 +84,13 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  startScan() async {
-    /// Read data from QRCode or BarCode,
-    /// returns in String
-    var cameraScanResult = await scanner.scan();
+  // startScan() async {
+  //   /// Read data from QRCode or BarCode,
+  //   /// returns in String
+  //   var cameraScanResult = await scanner.scan();
 
-    setState(() {
-      scanResult = cameraScanResult;
-    });
-  }
+  //   setState(() {
+  //     scanResult = cameraScanResult;
+  //   });
+  // }
 }
